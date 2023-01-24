@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ name }}
+{% endblock %}
+
+{% block body %}
+
+<br>
+<div class="banks clearfix">
+    <img src="/static/{{image}}" class="bank_image col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="{{ name }}">
+
+    <h1 class="bank_header">{{ name }}</h1>
+    <br>
+
+    <p>
+        {{ about }}
+    </p>
+
+    <p>
+        Several countie(s) provided for include:
+        <div class="counties">
+            <ul>
+                {% for county in counties %}
+                <li>{{ county.county }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </p>
+
+    <p>
+        Address: {{ address }}
+    </p>
+
+    <p>
+        Phone Number: {{ phone_number }}
+    </p>
+
+    <p>
+        Website: <a href="https://{{ website }}/">{{ website }}</a>
+    </p>
+
+</div>
+
+{% endblock %}
