@@ -105,12 +105,12 @@ to get in contact with the food bank that covers their area.
 
      -   **food_bank.db:**
 
-                This is the database that contains the two tables utilized by the website. The first table contains
-                information such as the id, name, image, description, address, phone number, and official website
-                of each food bank. The second table contains some of the counties that each food bank covers. This
-                table contains the names of the counties, along with a county id for each county. There is also a
-                column for the food bank id that corresponds with the id of a food bank from the first table. This is
-                how both tables are connected.
+                Using SQLite, this is the database that contains the two tables utilized by the website. The first 
+                table contains information such as the id, name, image, description, address, phone number, and 
+                official website of each food bank. The second table contains some of the counties that each food 
+                bank covers. This table contains the names of the counties, along with a county id for each county. 
+                There is also a column for the food bank id that corresponds with the id of a food bank from the 
+                first table. This is how both tables are connected.
 
 - ##### Python:
 
