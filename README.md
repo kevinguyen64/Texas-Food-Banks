@@ -120,7 +120,7 @@ to get in contact with the food bank that covers their area.
 
      -   **@app.route("/"):**
 
-                    This route render the index.html template, yielding the homepage of the website.
+                    This route renders the index.html template, yielding the homepage of the website.
 
      -   **@app.route("/bank"):**
 
